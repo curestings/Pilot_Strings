@@ -1,0 +1,94 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: lightgrey;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+	width: 25%;
+}
+
+
+.footer-distributed .footer-left img{
+	width: 40%;
+}
+
+
+
+.footer-distributed .footer-center{
+	width: 50%;
+}
+.footer-distributed .footer-center .footer-company-name{
+	color:  grey;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	text-align: justify;
+}
+
+
+
+.footer-distributed .footer-right{
+	width: 25%;
+}
+
+.footer-right-span{
+	display: block;
+	color:  Orange;
+	font-size: 70px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+
+}
