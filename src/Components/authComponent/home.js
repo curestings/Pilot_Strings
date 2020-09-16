@@ -55,13 +55,13 @@ class Home extends Component{
 	      							</p>
 	      						</div>
 	      					</div>
-						</div><br/>
-						<div className="column-button">
-							<button className="donor-button">Become Donor</button>
-							<button className="patient-button">Patient</button>
 						</div>
 				</div>
-				<hr/>
+				<div className="column-button">
+							<button onclick="" className="donor-button">Become Donor</button>
+							<button className="patient-button">Patient</button>
+						</div>
+				<hr className="horizontal" />
 				<br/>
 
 				<div className="exp">
@@ -130,5 +130,3 @@ class Home extends Component{
 }
 
 export default Home
-
-

@@ -1,9 +1,11 @@
+
+ 
 .* {
   box-sizing: border-box;
 }
 
 .banner {
-	background: orange;
+	background: #FC4C02;
 	position: relative;
 }
 
@@ -85,40 +87,43 @@
         font: 20px Arial, sans-serif;
 }
 
-.work .column-button{
-	width: 50%;
-	padding-left: 10%;
+ .column-button{
+	width: 80%;
+  padding-right: 10% ;
+  padding-left: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-left: 10%;
 }
 
-.work .column-button:hover{
+ /*.column-button:hover{
 	background-color: #101010;
-}
+}*/
 
-.work .column-button .donor-button{
+ .column-button .donor-button{
 	float: left;
-	text-align: right;
-	background-color: #000020; 
-  	border: none;
-  	color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  float: left;
+  background-color: #000020; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    float: left;
+    cursor: pointer;
 }
 
-.work .column-button .patient-button{
+ .column-button .patient-button{
 	float: right;
-	text-align: right;
-	background-color: #000020; 
-  	border: none;
-  	color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  background-color: #000020; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 
@@ -176,10 +181,12 @@
 
 .horizontal
 {
-	margin-top: 10%;
-	margin-bottom: 10%;
-	width: 100%;
-	color: grey;
+  margin: 5% auto;
+  width: 80%;
+  color: grey;
+  background-color: grey;
+  text-align: center;
+  height: 0.3rem;
 
 }
 
@@ -202,7 +209,7 @@
 
 
 @media screen and (max-width: 600px) {
-  .work .column {
+  .exp .column ,.work .column {
     width: 100%;
     display: block;
     margin-bottom: 10px;
@@ -212,13 +219,5 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .exp .column , .work .column{
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-  .exp .detail{
-  	font-size: 14px;
-  }
-}
+
+

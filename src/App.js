@@ -3,12 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './header'
 import Footer from './footer'
-import Home from "./Components/authComponent/home"
+import Home from './Components/authComponent/home'
+import Contact from './Components/authComponent/contact'
 
 function App() {
   return (
     <div >
-        <Home />
+        <div> 
+        <Home/>
+        </div>
     </div>
   );
 }
