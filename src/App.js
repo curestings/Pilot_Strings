@@ -6,11 +6,12 @@ import Footer from './footer'
 import Home from './Components/authComponent/home'
 import Contact from './Components/authComponent/contact'
 
+
 function App() {
   return (
     <div >
         <div> 
-        <Home/>
+        <Home />
         </div>
     </div>
   );

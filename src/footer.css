@@ -42,7 +42,9 @@ footer{
 
 
 .footer-distributed .footer-left img{
-	width: 40%;
+	width: 200px;
+	height: 200px;
+	padding-left: 10px;
 }
 
 
@@ -66,11 +68,14 @@ footer{
 
 .footer-right-span{
 	display: block;
-	color:  Orange;
+	color:  #FC4C02;
 	font-size: 70px;
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	vertical-align: center;
 }
 
 

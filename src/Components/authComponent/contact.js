@@ -41,7 +41,7 @@ class Contact extends Component{
 								<h1>HeadQuarter</h1>
 								<h3>New Delhi , India </h3>
 								<p className="text"><i class='fas'>&#xf3c5; </i>Room no. 567, Radhakrishnan Bhawan , IIT Roorkee </p>
-								<p className="text"><i class='fas'>&#xf095;</i>91-911-722-7202</p>
+								<p className="text"><i class='fas'>&#xf095;</i>+91-911-722-7202</p>
 								<div className="social">
 									<a href="#"><i class='fas fa fa-facebook'>&#xf09a;</i></a>
 									<a href="#"><i class='fas fa fa-instagram'>&#xf16d;</i></a>

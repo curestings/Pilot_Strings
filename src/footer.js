@@ -1,12 +1,13 @@
 import React , { Component } from 'react';
 import './footer.css'
+import logo from "./logo.svg";
 
 class Footer extends Component{
 	render(){
 		return (
 			<div className="footer-distributed">
 				<div className="footer-left">
-          			<img src="./logo1.jpg" />
+          			<img src={logo} />
 				</div>
 
 				<div className="footer-center">
@@ -26,7 +27,7 @@ class Footer extends Component{
 				</div>
 				<div className="footer-right">
 					<p className="footer-company-about">
-						<span className="footer-right-span">Donote</span>
+						<span className="footer-right-span">Donate</span>
 					</p>
 				</div>
 		</div>
