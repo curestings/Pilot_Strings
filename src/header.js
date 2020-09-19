@@ -1,36 +1,50 @@
-import React , { Component } from 'react';
-import './header.css';
+import React, { Component } from "react";
+import "./header.css";
+import TemporaryDrawer from "./navigationDrawer";
+import logo from "./logo.svg";
 
-class Header extends Component{
-	render(){
-		return(
-			<div className="header">
-  				<div className="header-logo">
-  					<a href="#default" className="logo"><img className="img" src="./logo1.jpg" alt="logo" /></a>
-  				</div>
-  				<div className="header-right">
-  					<div className="column1">
-  						<a className="active" href="#login">Sign Up/IN</a>
-  						<a className="active" href="#login">Donate Now</a>
-  					</div>
-    				<div className="column2">
-    					<div className="dropdown">
-    						<button onClick=""className="dropbtn"><i className="fa fa-bars"></i>
-    						</button>
-    						<div className="dropdown-content">
-    							<a href="#">How it's Works?</a>
-    							<a href="#">FAQs?</a>
-    							<a href="#"> Where do your donations go?</a>
-    							<a className="active" href="#login">Sign Up/IN</a>
-    							<a className="active" href="#login">Donate Now</a>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-			</div>
-			);
-	}
+class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      open: false,
+    };
+  }
+
+  openDrawer = (e) => {
+    this.setState({ open: true });
+  };
+
+  closeDrawer = () => {
+    this.setState({ open: false });
+  };
+
+  render() {
+    return (
+      <div>
+        <div class="header">
+          <a href="#default" class="logo">
+            <img src={logo} alt="logo" />
+          </a>
+          <div class="header-right">
+            <button class="active" href="#">
+              Donate Now
+            </button>
+            <button class="active" href="#">
+              SignUp/In
+            </button>
+            <div className="dropdown" onClick={(e) => this.openDrawer(e)}>
+              <button className="dropbtn">
+                <i class="fa bars">&#xf0c9;</i>
+              </button>
+            </div>
+          </div>
+        </div>
+        {console.log("open : ", this.state.open)}
+        {this.state.open && <TemporaryDrawer />}
+      </div>
+    );
+  }
 }
 
-export default Header
-
+export default Header;

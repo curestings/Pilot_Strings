@@ -2,31 +2,13 @@ import React , { Component } from 'react'
 import './home.css'
 import Header from './../../header'
 import Footer from './../../footer'
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
 
 
 class Home extends Component{
-
-/*	  state = {
-    open: true,
-  };
-  onOpenModal = () => {
-    this.setState({ open: true });
-  };
-  onCloseModal = () => {
-    this.setState({ open: false });
-  };
-  */
-
-
 	render(){
-		//const { open } = this.state;
 		return (
 			<div>
-				
-          			<Header />
-   
+				<Header />
 
 
 				<div className="banner">
@@ -73,13 +55,13 @@ class Home extends Component{
 	      							</p>
 	      						</div>
 	      					</div>
-						</div>
-				</div>
-				<div className="column-button">
-							<button onclick="" className="donor-button">Become Donor</button>
+						</div><br/>
+						<div className="column-button">
+							<button className="donor-button">Become Donor</button>
 							<button className="patient-button">Patient</button>
 						</div>
-				<hr className="horizontal" />
+				</div>
+				<hr/>
 				<br/>
 
 				<div className="exp">
