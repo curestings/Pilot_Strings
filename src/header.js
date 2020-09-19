@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./header.css";
 import TemporaryDrawer from "./navigationDrawer";
+import Login from "./Components/unAuthComponent/popups/login";
 import logo from "./logo.svg";
 
 class Header extends Component {
@@ -8,6 +9,7 @@ class Header extends Component {
     super();
     this.state = {
       open: false,
+      openLogin:false;
     };
   }
 
@@ -18,7 +20,12 @@ class Header extends Component {
   closeDrawer = () => {
     this.setState({ open: false });
   };
-
+  onOpenLogin = () => {
+  	this.setState({ openLogin: true });
+  };
+  onCloseLogin = () => {
+  	this.setState({ openLogin: false });
+  };
   render() {
     return (
       <div>
@@ -30,7 +37,7 @@ class Header extends Component {
             <button class="active" href="#">
               Donate Now
             </button>
-            <button class="active" href="#">
+            <button class="active" onClick={this.onOpenLogin}>
               SignUp/In
             </button>
             <div className="dropdown" onClick={(e) => this.openDrawer(e)}>
@@ -42,6 +49,9 @@ class Header extends Component {
         </div>
         {console.log("open : ", this.state.open)}
         {this.state.open && <TemporaryDrawer />}
+        <Modal open={openLogin} onClose={this.onCloseLogin} center>
+          <Login/>
+        </Modal>
       </div>
     );
   }

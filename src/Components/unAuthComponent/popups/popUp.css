@@ -67,7 +67,7 @@ ul{
 .vl-innertext {
 	position: absolute;
 	top: 50%;
-	left:15%;
+	left:20%;
 	transform: translate(200%,-50%);
 	background-color: #ffffff;
 	padding: 8px 10px;
@@ -109,7 +109,7 @@ input[type="password"]
 button[type="Submit"]
 {
 	color: white;
-	background-color: #FC6100;
+	background-color: tomato;
 	font-size: 13px;
 	font-weight: bold;
 	width:100%;
@@ -123,31 +123,31 @@ button[type="Submit"]
 .forgot
 {
 	margin-left:57%;
-	color: #FC6100;
+	color: tomato;
 	background-color: white;
 	font-size: 15px;
 	font-weight: bold;
 	width:48%;
-	margin-top:2%;
+	margin-top:%;
 	border:none;
 
 }
 
 .new
 {
-	color: #FC6100;
+	color: tomato;
 
 }
 .newtocure{
 	font-size:13px;
-	margin-left:3%;
-	margin-top: 2%;
+	margin-left:9%;
+	margin-top: 0%;
 }
 form{
 	position:absolute;
 	left:36%;
 	font-weight:bold;
-	top:10%;
+	top:2%;
 	width:350px;
 	height:450px;
   background: #fff;
@@ -157,15 +157,19 @@ form{
 	border-bottom-style: ridge;
 }
 .skip{
-	color:#FC6100;
+	color:tomato;
 	position:absolute;
 	right:1%;
 	bottom:1%;
 }
+@media only screen and (min-height:823px){
+	form{
+		top:6%
+	}
+}
 @media only screen and (max-width: 800px) {
 form{
-	left:28%;
-	top:10%;
+	left:22%;
 	width:200px;
 	height:320px;
 	font-size:10px;
@@ -173,7 +177,7 @@ form{
 .forgot
 {
 	margin-left:48%;
-	color: #FC6100;
+	color: tomato;
 	background-color: white;
 	font-size:10px;
 	font-weight: bold;
@@ -224,7 +228,7 @@ input[type="password"]
 }
 .new
 {
-	color: #FC6100;
+	color: tomato;
 	margin-left:20%;
 
 }
@@ -244,7 +248,7 @@ ul{
 }
 
 .vl-innertext {
-	left:5%;
+	left:10%;
 }
 .vl {
 	width: 90%;
