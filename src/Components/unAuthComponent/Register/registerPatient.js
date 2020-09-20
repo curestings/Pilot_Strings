@@ -5,14 +5,14 @@ class Patient extends Component{
 	render(){
 		return (
 			<div>
-			<form>
+			<form class="patientform">
 	  	<h1 class="patienth1"> Do You need Plasma?</h1>
 	  	<label>Name</label><br/>
-	  	<input type="text" name="name" placeholder="Om"/>
+	  	<input type="text" class="inputs" name="name" placeholder="Om"/>
 	  	<label>Email</label><br/>
-	  	<input type="email" name="email" placeholder="omasati34654@gmail.com"/>
+	  	<input type="email" class="inputs"name="email" placeholder="omasati34654@gmail.com"/>
 	  	<label >Mobile Number</label><br/>
-	  	<input type="tel" name="mobileNumber" placeholder="919340012238"/>
+	  	<input type="tel" class="inputs" name="mobileNumber" placeholder="919340012238"/>
 			<table>
 			  <tr>
 			    <td class="labeltd"><label type="select" >Blood Group</label></td>
@@ -52,7 +52,7 @@ class Patient extends Component{
 	  			<input type="checkbox"/>
 	  		</label>
 	  		<p class="patienttc">  Terms and Conditions</p>
-	  		<button type="button">REGISTER NOW</button>
+	  		<button class="patientbutton" type="button">REGISTER NOW</button>
 				<datalist id="bloodgroup">
 					<option value="A+"/>
 					<option value="A-"/>

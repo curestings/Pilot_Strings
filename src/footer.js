@@ -20,8 +20,8 @@ class Footer extends Component{
 						</ul>
 						<br/>
 						<br/>
-						<div>
-							<p className="footer-company-name">© Copyright 2020 CureStrings. All rights reserved.</p>
+						<div className="copyright">
+							<p className="footer-company-name">©  Copyright 2020 CureStrings. All rights reserved.</p>
 						</div>
 					</div>
 				</div>

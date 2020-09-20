@@ -9,11 +9,11 @@ class Contact extends Component{
 		return (
 			<div>
 				<Header />
-					
+
 					<div className="banner1">
 						<div className="banner1-text">
 							<h1>Reach Our Team</h1>
-							<h4>We love questions and feedback - and we're always happy to hrlp!</h4>
+							<h4>We love questions and feedback - and we're always happy to help!</h4>
 							<h4>Here are some ways to contact us.</h4>
 						</div>
 					</div>
@@ -23,16 +23,16 @@ class Contact extends Component{
 							<div className="container">
 								<h1>Send Us a Message</h1>
 								<p>Send us a message and we'll respond in 24 hours</p>
-								<form action="">
+								<form action="" className="contactForm">
 								<label for="name">Name</label>
-								<input type="text" id="name" name="name" placeholder="Your Name" />
+								<input class="inputContect" type="text" id="name" name="name" placeholder="Your Name" />
 								<label for="mobile-number">Mobile Number</label>
-								<input type="number" id="mobile-number" name="mobile-number" placeholder="Your Mobile Number" />
-								<label for="email">Email</label>
-								<input type="email" id="email" name="email" placeholder="Your Email Address" />
+								<input class="inputContect" type="number" id="mobile-number" name="mobile-number" placeholder="Your Mobile Number" />
+								<label  for="email">Email</label>
+								<input class="inputContect" type="email" id="email" name="email" placeholder="Your Email Address" />
 								<label for="message">Message</label>
-								<textarea  id="message" name="message" row="8"/>
-								<input type="submit" value="Send" />
+								<textarea class="inputContect" id="message" name="message" row="8"/>
+								<input class="inputContectSubmit" type="submit" value="Send" />
 							</form>
 							</div>
 						</div>
@@ -40,12 +40,12 @@ class Contact extends Component{
 							<div className="container1">
 								<h1>HeadQuarter</h1>
 								<h3>New Delhi , India </h3>
-								<p className="text"><i class='fas'>&#xf3c5; </i>Room no. 567, Radhakrishnan Bhawan , IIT Roorkee </p>
+								<p className="text"><i class="fas fa-map-marker"></i>Room no. 567, Radhakrishnan Bhawan , IIT Roorkee </p>
 								<p className="text"><i class='fas'>&#xf095;</i>+91-911-722-7202</p>
 								<div className="social">
-									<a href="#"><i class='fas fa fa-facebook'>&#xf09a;</i></a>
-									<a href="#"><i class='fas fa fa-instagram'>&#xf16d;</i></a>
-									<a href="#"><i class='fas fa fa-twitter'>&#xf099;</i></a>
+									<a href="#"><i class='fas fa fa-facebook'></i></a>
+									<a href="#"><i class='fas fa fa-instagram'></i></a>
+									<a href="#"><i class='fas fa fa-twitter'></i></a>
 								</div>
 							</div>
 						</div>
