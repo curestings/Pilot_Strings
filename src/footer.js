@@ -4,6 +4,10 @@ import logo from "./logo.svg";
 
 class Footer extends Component{
 	render(){
+		const facebookUrl="https://www.facebook.com/";
+		const instagramUrl="https://www.facebook.com/";
+		const linkedinUrl="https://www.facebook.com/";
+		const twitterUrl="https://www.facebook.com/";
 		return (
 			<div className="footer-distributed">
 				<div className="footer-left">
@@ -20,15 +24,21 @@ class Footer extends Component{
 						</ul>
 						<br/>
 						<br/>
-						<div>
-							<p className="footer-company-name">© Copyright 2020 CureStrings. All rights reserved.</p>
+						<div className="copyright">
+							<p className="footer-company-name">©  Copyright 2020 CureStrings. All rights reserved.</p>
 						</div>
 					</div>
 				</div>
 				<div className="footer-right">
 					<p className="footer-company-about">
-						<span className="footer-right-span">Donate</span>
+						<span className="footer-right-span"><h1>Donate</h1></span>
 					</p>
+					<div className="social-link">
+						<a href={facebookUrl} target="_blank"><i class="fas fa fa-facebook-square"></i></a>
+						<a href={instagramUrl} target="_blank"><i class="fas fa fa-instagram"></i></a>
+						<a href={linkedinUrl} target="_blank"><i class="fas fa fa-linkedin-square"></i></a>
+						<a href={twitterUrl} target="_blank"><i class="fas fa fa-twitter-square"></i></a>
+					</div>
 				</div>
 		</div>
 			)

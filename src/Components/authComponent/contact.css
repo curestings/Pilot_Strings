@@ -68,8 +68,21 @@
 	padding: 2.5% 10%;
 }
 
-form{
-	padding: 0 10%;
+.contactForm{
+	    /*padding: 0 10%;*/
+    position: relative;
+    /* position: absolute; */
+    left: 10%;
+    font-weight: bold;
+    top: 2%;
+    width: 80%;
+    height: 450px;
+    background: #fff;
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    border-bottom-style: ridge;
+
 }
 
 
@@ -118,11 +131,11 @@ input[type=submit]:hover {
 .social{
 	padding: 0% 10%;
 }
-.fas {
-  padding: 20px;
+.fasC {
+  padding: 6%;
   font-size: 40px;
   margin-top: 10%;
-  width: 50px;
+  width: 20%;
   text-align: center;
   text-decoration: none;
   color: grey;
@@ -132,7 +145,7 @@ i{
 	color:grey;
 }
 
-.fas:hover {
+.fasC:hover {
   opacity: 0.7;
 }
 
@@ -145,7 +158,6 @@ i{
 .fa-twitter {
   background: lightgrey;
   color: white;
-  margin: 0 10%;
 }
 
  .fa-instagram {
