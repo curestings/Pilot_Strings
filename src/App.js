@@ -1,18 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {render} from 'react-dom';
+import Router from './Router/routes';
 import Header from './header'
+import Glogin from './googleAuth';
 import Footer from './footer'
-import Home from './Components/authComponent/home'
-import Contact from './Components/authComponent/contact'
-
+import Login from "./Components/unAuthComponent/popups/login";
 
 function App() {
   return (
-    <div >
-        <div> 
-        <Home />
-        </div>
+    <div>
+      <Router>
+      </Router>
     </div>
   );
 }

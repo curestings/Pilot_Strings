@@ -57,13 +57,28 @@ footer{
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
-	text-align: justify;
+	text-align: left;
+	position: relative;
+	display: block;
+}
+ul{
+	list-style: none;
+}
+
+li{
+	color: grey;
 }
 
 
 
 .footer-distributed .footer-right{
 	width: 25%;
+}
+
+
+
+.copyright p{
+	margin-top: 500px;
 }
 
 .footer-right-span{

@@ -1,8 +1,7 @@
-import React , { Component } from 'react'
-import './home.css'
-import Header from './../../header'
-import Footer from './../../footer'
-import 'react-responsive-modal/styles.css';
+import React , { Component } from 'react';
+import './home.css';
+import Header from './../../header';
+import Footer from './../../footer';
 import { Modal } from 'react-responsive-modal';
 
 
@@ -24,9 +23,9 @@ class Home extends Component{
 		//const { open } = this.state;
 		return (
 			<div>
-				
+
           			<Header />
-   
+
 
 
 				<div className="banner">
@@ -135,7 +134,7 @@ class Home extends Component{
 						</div>
 					</div>
 
-					
+
 					</div>
 
 
