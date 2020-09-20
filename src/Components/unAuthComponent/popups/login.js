@@ -4,8 +4,10 @@ import Glogin from './../../../googleAuth';
 import ReactDOM from 'react-dom';
 import { Modal } from 'react-responsive-modal';
 import Forget from './forget';
+import {Card} from 'reactstrap';
 class Login extends Component{
 	state = {
+		isPatient: 1,
 		openForgot :false,
 	};
 	onOpenModal = () => {
@@ -15,15 +17,19 @@ onCloseModal = () => {
 	this.setState({ openForgot: false });
 };
 
+asPatientorDonor = (val) => {
+	this.setState({isPatient:val})
+}
+
 	render(){
 		const { openForgot } = this.state;
 		return (
 			<div>
-      <form class="popupform">
-    		<ul>
-    			<li><h2>PATIENT</h2></li>
-    			<li><h2>DONOR</h2></li>
-    		</ul>
+      			<form class="popupform">
+    			<ul>
+    				<li className="patient"><h2 onClick={()=>this.asPatientorDonor(1)} className={this.state.isPatient==1 ? "line":""}>PATIENT</h2></li>
+    				<li className="donor"><h2  onClick={()=>this.asPatientorDonor(2)} className={this.state.isPatient==2 ? "line":""}>DONOR</h2></li>
+    			</ul>
 				<div class="google">
     		<Glogin/>
 				</div>
