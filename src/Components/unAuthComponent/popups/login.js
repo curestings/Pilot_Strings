@@ -44,7 +44,7 @@ asPatientorDonor = (val) => {
     			<label class="labelpassword" for="password">Password</label><br/>
     		</div>
     		<input type="password" class="inputPasswordPopups" placeholder="must be at-least 6 character" required/>
-    		<a class="forgot" name="forgot"  onClick={this.onOpenModal}>Forgot Password?</a>
+    		<div class="forgot"><a name="forgot"  onClick={this.onOpenModal}>Forgot Password?</a></div>
     		<button class="buttonSubmitPopups" type="submit" name="submit">Submit</button>
     		<div class="newtocure">
     		New to CureStrings? Register <a class="new">(Patient/Donor)</a>
