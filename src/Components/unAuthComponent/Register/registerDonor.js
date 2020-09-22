@@ -13,6 +13,8 @@ class Donor extends Component{
 <input type="email" class="inputs" name="email" placeholder="omasati34654@gmail.com"/>
 <label >Mobile Number</label><br/>
 <input type="tel" class="inputs" name="mobileNumber" placeholder="919340012238"/>
+<label >Password</label><br/>
+<input type="Password" class="inputs" name="mobileNumber" placeholder="13@#aA"/>
 <table>
   <tr>
     <td class="labeltd"><label type="select" >Blood Group</label></td>
@@ -52,10 +54,10 @@ class Donor extends Component{
   <input class="inputs" type="date"/>
   <label >If no, what is the date of discharge from hospital/home Quarantine</label>
 	<input class="inputs" type="date"/>
-  <label>
-    <input class="donorcb"type="checkbox"/>
-  </label>
-  <p class="donortc">  Terms and Conditions</p>
+	<div>
+  	<input class="donorcb" type="checkbox"/>
+  	<p class="donortc">  Terms and Conditions</p>
+	</div>
   <button class="donorbutton" type="button">REGISTER NOW</button>
   <datalist id="bloodgroup">
     <option value="A+"/>

@@ -13,6 +13,8 @@ class Patient extends Component{
 	  	<input type="email" class="inputs"name="email" placeholder="omasati34654@gmail.com"/>
 	  	<label >Mobile Number</label><br/>
 	  	<input type="tel" class="inputs" name="mobileNumber" placeholder="919340012238"/>
+			<label >Password</label><br/>
+			<input type="Password" class="inputs" name="mobileNumber" placeholder="13@#aA"/>
 			<table>
 			  <tr>
 			    <td class="labeltd"><label type="select" >Blood Group</label></td>

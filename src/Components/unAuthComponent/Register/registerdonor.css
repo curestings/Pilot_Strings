@@ -107,15 +107,17 @@ input[type="checkbox"]{
 	height: 50px;
 }
 .donortc{
-	margin-top:10%;
-	margin-left:5%;
+	margin-left:10%;
 }
 
 
 .donorcb{
-	margin-top:150%;
-	margin-left:0%;
-	size:2px;
+	position:absolute;
+	bottom: 70px;
+	margin-left:5%;
+}
+input{
+	padding-left: 10px;
 }
 @media only screen and (max-width: 600px) {
 .donorform{
@@ -149,11 +151,9 @@ input[type="checkbox"]{
 }
 
 .donorcb{
-	margin-top:45%;
-	margin-left:-95%;
+	margin-left:5%;
 }
 .donortc{
-	margin-top:50%;
 	margin-left:12%;
 }
 }
