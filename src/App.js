@@ -9,8 +9,9 @@ import Login from "./Components/unAuthComponent/popups/login";
 
 function App() {
   return (
-      <Routes>
-      </Routes>
+    <div>
+      <Routes />
+    </div>
   );
 }
 

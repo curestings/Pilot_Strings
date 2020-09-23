@@ -1,9 +1,13 @@
 import React , { Component } from 'react';
+import Header from './../../header';
+import Footer from './../../footer';
 import './faq.css';
 import './faqscript.js';
 class Faq extends Component{
 	render(){
 		return (
+			<div>
+						<Header/>
 			<div>
       <div class="questions">
       <button class="accordion">1. What is plasma?</button>
@@ -111,6 +115,11 @@ class Faq extends Component{
       <div class="panel">
       <p> Antibody testing determines whether you had COVID-19 in the past and now have antibodies against the virus. A test to diagnose COVID-19 determines if you currently have the disease.</p>
       </div>
+			</div>
+			</div>
+			<div>
+			<Footer  stype ="position:absolute; bottom:0%; left:0%;">
+			</Footer>
 			</div>
 			</div>
 			);

@@ -1,4 +1,3 @@
-
 h2
 {
 	font-family:sans-serif;
@@ -12,10 +11,14 @@ p{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+.main-container1{
+	margin: 18% 0;
+}
 .inputtext
 {
 	border-radius: 7px;
-	margin-top: 10%;
+	margin-top: 0%;
 	border: 2px solid lightgrey;
 	width:100%;
 	height: 50%;
@@ -37,26 +40,20 @@ ul{
 }
 .labelemail
 {
-	padding-top:1%;
-	float: left;
-	font-family: sans-serif;
-	font-size: 15px;
+	margin-left: 0%;
 	font-weight: bold;
-	margin-top:20%;
+	margin-top:12%;
 }
 .labelpassword
 {
-	padding-top:1%;
-	float: left;
-	font-family: sans-serif;
-	font-size: 15px;
+	margin-left: 0%;
 	font-weight: bold;
 	margin-top:5%;
 }
 .vl {
 	position: absolute;
 	left: 50%;
-	top:8%;
+	top:12%;
 	transform: translate(-50%);
 	border: 2px solid #ddd;
 	width: 80%;
@@ -67,7 +64,7 @@ ul{
 .vl-innertext {
 	position: absolute;
 	top: 50%;
-	left:20%;
+	left:22%;
 	transform: translate(200%,-50%);
 	background-color: #ffffff;
 	padding: 8px 10px;
@@ -75,7 +72,7 @@ ul{
 }
 
 
-.google {
+/* .google {
 	border-radius: 4px;
 	border: 2px solid black;
 	color:black;
@@ -84,36 +81,81 @@ ul{
 	height: 10%;
 	margin-top:10%;
 	text-align:center;
+} */
+.google{
+	text-align: center;
+	padding: 10% 10%;
+	width: 97%;
+	margin-top: 33px;
 }
 
-input[type="email"]
+.card{
+	width: 80%;
+	padding: 10%;
+}
+
+.line{
+	padding-bottom: 5px; 
+	border-bottom-color: #FC024C;
+	border-bottom-style: solid; 
+	border-bottom-width: 2px; 
+	width: fit-content; 
+}
+.inputEmail
 {
 	border-radius: 7px;
+	padding: 0 5%;
 	border: 2px solid lightgray;
 	width:100%;
-	height: 10%;
-	margin-top:5%;
+	height: 60px;
+	margin-top:0%;
 	text-align:left;
 }
 
-input[type="password"]
+.inputPasswordPopups
 {
 	border-radius: 7px;
 	border: 2px solid lightgrey;
 	width:100%;
-	height: 10%;
-	margin-top:5%;
+	padding: 0 5%;
+	height: 60px;
+	margin-top:0;
 	text-align:left;
 }
 
-button[type="Submit"]
+.close-button{
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.fa
+{	
+	float: right;
+	color: black;
+	font-size: 30px;
+}
+
+.buttonSubmitPopups
 {
 	color: white;
 	background-color: tomato;
 	font-size: 13px;
 	font-weight: bold;
 	width:100%;
-	margin-top:5%;
+	margin-top:8%;
+	margin-bottom:3%;
+	height:10%;
+	border:none;
+
+}
+.buttonSubmitForgetPopups
+{
+	color: white;
+	background-color: tomato;
+	font-size: 13px;
+	font-weight: bold;
+	width:100%;
+	margin-top:22%;
 	margin-bottom:3%;
 	height:10%;
 	border:none;
@@ -122,13 +164,18 @@ button[type="Submit"]
 
 .forgot
 {
-	margin-left:54%;
-	margin-top: 100px;
+	float: right;
+	margin-top: 3%;
 	color: tomato;
 	background-color: white;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: bold;
 	border:none;
+}
+
+.forgot-top{
+	text-align: center;
+	font-size: 32px;
 }
 
 .new
@@ -136,18 +183,36 @@ button[type="Submit"]
 	color: tomato;
 
 }
+ul{
+	width: 100%;
+}
+ul .patient{
+	margin: 26px 0;
+	float: left;
+	width: 50%;
+	padding: 0 20%;
+}
+
+ul .donor{
+	margin: 26px 0;
+	float: right;
+	width: 50%;
+	
+}
+
+
 .newtocure{
-	font-size:13px;
-	margin-left:2%;
+	text-align: justify;
+	font-size:16px;
+	margin-left:0%;
 	margin-top: 0%;
 }
-form{
+.popupform{
 	position:absolute;
-	left:36%;
+	height: 27%;
+	margin: 2% 35%;
 	font-weight:bold;
-	top:2%;
-	width:350px;
-	height:450px;
+	width:30%;
   background: #fff;
   padding:2%;
   border-radius: 5px;
@@ -161,20 +226,20 @@ form{
 	bottom:1%;
 }
 @media only screen and (min-height:823px){
-	form{
+	.popupform{
 		top:6%
 	}
 }
 @media only screen and (max-width: 800px) {
-form{
-	left:22%;
+.popupform{
+	left:30%;
 	width:200px;
 	height:320px;
 	font-size:10px;
 }
 .forgot
 {
-	margin-left:48%;
+
 	color: tomato;
 	background-color: white;
 	font-size:10px;
@@ -184,17 +249,20 @@ form{
 	border:none;
 
 }
-input[type="email"]
+
+
+.inputEmail
 {
-	border-radius: 3px;
-	border: 2px solid lightgray;
-	width:100%;
-	height: 10%;
-	margin-top:5%;
-	text-align:left;
+	border-radius: 7px;
+    padding: 0 3%;
+    border: 2px solid lightgray;
+    width: 100%;
+    height: 47px;
+    margin-top: 2%;
+    text-align: left;
 }
 
-input[type="password"]
+.inputPasswordPopups
 {
 	border-radius: 3px;
 	border: 2px solid lightgrey;
@@ -205,20 +273,15 @@ input[type="password"]
 }
 .labelemail
 {
-	padding-top:1%;
-	float: left;
-	font-family: sans-serif;
 	font-size: 10px;
 	font-weight: bold;
 	margin-top:15%;
 }
 .labelpassword
 {
-	float: left;
-	font-family: sans-serif;
 	font-size: 10px;
 	font-weight: bold;
-	margin-top:5%;
+	margin-top:10%;
 }
 .google {
 	margin-top:10%;

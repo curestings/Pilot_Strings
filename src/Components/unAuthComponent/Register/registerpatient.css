@@ -1,4 +1,4 @@
-form{
+.patientform{
 	position:absolute;
 	left:30%;
 	width:40%;
@@ -32,7 +32,7 @@ label{
 	font-family: sans-serif;
 	font-size: 20px;
 }
-input
+.inputs
 {
 	margin-left:5%;
 	border-radius: 7px;
@@ -54,43 +54,21 @@ input
 .bglabel{
 	margin-top:8%;
 }
-.bginput{
-	width:60%;
-	margin-left:9%;
-	margin-top:5%;
-}
+
 
 .aglabel{
 	margin-top:8%;
 }
-.aginput{
-	width:60%;
-	margin-left:23%;
-	margin-top:5%;
-}
+
 .clabel{
 	margin-top:8%;
-}
-.cinput{
-	width:60%;
-	margin-left:23%;
-	margin-top:5%;
 }
 .pclabel{
 	margin-top:8%;
 }
-.pcinput{
-	width:60%;
-	margin-left:16%;
-	margin-top:5%;
-}
+
 .gnlabel{
 	margin-top:8%;
-}
-.gninput{
-	width:60%;
-	margin-left:17%;
-	margin-top:5%;
 }
 
 input[type="radio"]
@@ -116,7 +94,7 @@ input[type="radio"]
 input[type="checkbox"]{
 	width:20px;
 }
-button
+.patientbutton
 {
 	font-size: 20px;
 	font-weight:bold;
@@ -129,17 +107,17 @@ button
 	height: 50px;
 }
 .patienttc{
-	margin-top:33%;
-	margin-left:11%;
+	margin-top:33.5%;
+	margin-left:10%;
 }
 
 
 .patientcb{
-	margin-top:30%;
+	margin-top:33%;
 	margin-left:-95%;
 }
 @media only screen and (max-width: 600px) {
-form{
+.patientform{
 	position:absolute;
 	left:10%;
 	width:80%;
@@ -148,34 +126,9 @@ form{
 	padding-bottom:10px;
 }
 .patienth1{
-	margin-left:1%;
 	color:tomato;
 }
-.bginput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.aginput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.gninput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.cinput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.pcinput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
+
 .reportdate{
 	margin-top:20%;
 }

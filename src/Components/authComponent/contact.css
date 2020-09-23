@@ -86,7 +86,7 @@
 }
 
 
-input[type=text],input[type=number],input[type=email] ,textarea {
+.inputContect {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -95,7 +95,7 @@ input[type=text],input[type=number],input[type=email] ,textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+.inputContectSubmit{
   background-color: #00aff0;
   color: white;
   padding: 12px 20px;
@@ -170,13 +170,8 @@ i{
 
 
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] , .col ,.col1{
+  .column, .inputContectSubmit, .col ,.col1{
     width: 100%;
     margin-top: 0;
   }
 }
-
-
-
-
-

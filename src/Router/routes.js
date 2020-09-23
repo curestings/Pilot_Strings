@@ -5,13 +5,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import LoginPage from "./../Components/unAuthComponent/popups/login";
-import ForgotPage from "./../Components/unAuthComponent/popups/forgot";
-import SharePage from "./../Components/unAuthComponent/popups/share";
-import HelpPage from "./../Components/unAuthComponent/popups/help";
-import HomePage from "./../Components/authComponent/home";
-import ContactPage from "./../Components/authComponent/contact";
-
+import Login from "./../Components/unAuthComponent/popups/login";
+import Forget from "./../Components/unAuthComponent/popups/forget";
+import Share from "./../Components/unAuthComponent/popups/share";
+import Help from "./../Components/unAuthComponent/popups/help";
+import Home from "./../Components/authComponent/home";
+import Contact from "./../Components/authComponent/contact";
+import RegisterDonor from './../Components/unAuthComponent/Register/registerDonor';
+import RegisterPatient from './../Components/unAuthComponent/Register/registerPatient';
+import Faq from './../Components/authComponent/faq';
 export default function Routes() {
   return (
     <Router>
@@ -39,51 +41,76 @@ export default function Routes() {
             <li>
               <Link to="/contact"></Link>
             </li>
+            <li>
+              <Link to="/registerdonor"></Link>
+            </li>
+            <li>
+              <Link to="/registerpatient"></Link>
+            </li>
+            <li>
+              <Link to="/faq"></Link>
+            </li>
           </ul>
         </nav>
         <Switch>
+          <Route path="/faq">
+            <FaqPage/>
+          </Route>
+          <Route path="/registerdonor">
+            <RegisterDonorPage/>
+          </Route>
+          <Route path="/registerpatient">
+            <RegisterPatientPage/>
+          </Route>
           <Route path="/help">
-            <Help/>
+            <HelpPage/>
           </Route>
           <Route path="/Login">
-            <Login/>
+            <LoginPage/>
           </Route>
-          <Route path="/forgot">
-            <Forgot/>
+          <Route path="/forget">
+            <ForgetPage/>
           </Route>
           <Route path="/share">
-            <Share/>
+            <SharePage/>
           </Route>
           <Route path="/contact">
-            <Contact/>
+            <ContactPage/>
           </Route>
           <Route path="/">
-            <Home/>
+            <HomePage/>
           </Route>
         </Switch>
       </div>
     </Router>
   );
-  
+
 }
 
-function Home(){
-  return <div><HomePage/></div>;
+function HomePage(){
+  return <div><Home/></div>;
 }
-function Login() {
-  return <div><LoginPage/></div>;
+function LoginPage() {
+  return <div><Login/></div>;
 }
-function Forgot() {
-  return <div><ForgotPage/></div>;
+function ForgetPage() {
+  return <div><Forget/></div>;
 }
-function Share() {
-  return <div><SharePage/></div>;
+function SharePage() {
+  return <div><Share/></div>;
 }
-function Help(){
-  return <div><HelpPage/></div>;
+function HelpPage(){
+  return <div><Help/></div>;
 }
-function Contact(){
-  return <div><ContactPage/></div>;
+function ContactPage(){
+  return <div><Contact/></div>;
 }
-
-
+function RegisterDonorPage(){
+  return <div><RegisterDonor/></div>;
+}
+function RegisterPatientPage(){
+  return <div><RegisterPatient/></div>;
+}
+function FaqPage(){
+  return <div><Faq/></div>;
+}

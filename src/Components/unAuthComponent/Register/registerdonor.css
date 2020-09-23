@@ -1,4 +1,4 @@
-form{
+.donorform{
 	position:absolute;
 	left:30%;
 	width:40%;
@@ -7,10 +7,23 @@ form{
 	padding-bottom:10px;
 }
 .donorh1{
-	margin-left:5%;
+	margin-left:20%;
 	color:tomato;
 }
+table{
+  width:90%;
+  margin-left:5%;
+	margin-top: 5%;
+	border-spacing:0 10px;
+}
+.labeltd{
+  width:30%;
+  margin-top: 5%;
 
+}
+.inputtd{
+  width:70%;
+}
 label{
 	margin-top:5%;
 	margin-bottom:1%;
@@ -19,13 +32,21 @@ label{
 	font-family: sans-serif;
 	font-size: 20px;
 }
-input
+.inputs
 {
 	margin-left:5%;
-	margin-right:5%;
 	border-radius: 7px;
 	border: 2px solid tomato;
 	width:90%;
+	height: 50px;
+	text-align:left;
+}
+.tableinputs
+{
+	margin-left:5%;
+	border-radius: 7px;
+	border: 2px solid tomato;
+	width:96%;
 	height: 50px;
 	text-align:left;
 }
@@ -33,43 +54,21 @@ input
 .bglabel{
 	margin-top:8%;
 }
-.bginput{
-	width:60%;
-	margin-left:9%;
-	margin-top:5%;
-}
+
 
 .aglabel{
 	margin-top:8%;
 }
-.aginput{
-	width:60%;
-	margin-left:23%;
-	margin-top:5%;
-}
+
 .clabel{
 	margin-top:8%;
-}
-.cinput{
-	width:60%;
-	margin-left:23%;
-	margin-top:5%;
 }
 .pclabel{
 	margin-top:8%;
 }
-.pcinput{
-	width:60%;
-	margin-left:16%;
-	margin-top:5%;
-}
+
 .gnlabel{
 	margin-top:8%;
-}
-.gninput{
-	width:60%;
-	margin-left:17%;
-	margin-top:5%;
 }
 
 input[type="radio"]
@@ -81,12 +80,12 @@ input[type="radio"]
 .donornop{
 	position:absolute;
 	left:80%;
-	margin-top:8%;
+	margin-top:13%;
 }
 .donoryesp{
 	position:absolute;
 	left:10%;
-	margin-top:8%;
+	margin-top:13%;
 }
 .reportdate{
 	margin-top:15%;
@@ -95,7 +94,7 @@ input[type="radio"]
 input[type="checkbox"]{
 	width:20px;
 }
-button
+.donorbutton
 {
 	font-size: 20px;
 	font-weight:bold;
@@ -107,15 +106,19 @@ button
 	width:90%;
 	height: 50px;
 }
-.donorcb{
-	margin-left:0%;
-}
 .donortc{
-	margin-left:10%;
-	margin-top:9%;
+	margin-top:10%;
+	margin-left:5%;
 }
-@media only screen and (max-width: 800px) {
-form{
+
+
+.donorcb{
+	margin-top:150%;
+	margin-left:0%;
+	size:2px;
+}
+@media only screen and (max-width: 600px) {
+.donorform{
 	position:absolute;
 	left:10%;
 	width:80%;
@@ -123,75 +126,12 @@ form{
 	box-shadow: 5px 5px 5px 5px #eeeeee;
 	padding-bottom:10px;
 }
-.bginput{
-	width:60%;
-	margin-left:3.7%;
-	margin-top:5%;
-}
-.aginput{
-	width:60%;
-	margin-left:21%;
-	margin-top:5%;
-}
-.gninput{
-	width:60%;
-	margin-left:13.5%;
-	margin-top:5%;
-}
-.cinput{
-	width:60%;
-	margin-left:21%;
-	margin-top:5%;
-}
-.pcinput{
-	width:60%;
-	margin-left:12%;
-	margin-top:5%;
-}
-.reportdate{
-	margin-top:20%;
-}
-}
-@media only screen and (max-width: 450px) {
-form{
-	position:absolute;
-	left:10%;
-	width:80%;
-	color:black;
-	box-shadow: 5px 5px 5px 5px #eeeeee;
-	padding-bottom:10px;
-}
-.patienth1{
-	margin-left:3%;
+.donorh1{
 	color:tomato;
 }
-.bginput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.aginput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.gninput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.cinput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.pcinput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
+
 .reportdate{
-	margin-top:40%;
+	margin-top:20%;
 }
 .donornop{
 	position:absolute;
@@ -207,13 +147,13 @@ form{
 	margin-top:50%;
 	margin-left:15%;
 }
+
 .donorcb{
-	position:absolute;
-	left:5%;
-	bottom:4.5%;
+	margin-top:45%;
+	margin-left:-95%;
 }
 .donortc{
-	margin-left:13%;
-	margin-top:8%;
+	margin-top:50%;
+	margin-left:12%;
 }
 }

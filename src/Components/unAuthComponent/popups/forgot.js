@@ -6,13 +6,13 @@ class Forgot extends Component{
 		return (
 			<div>
       <form>
-        <h2>Forgot Password</h2>
-        <p className="main-container1">Please enter your e-mail address. You will receive an e-mail along with
+        <h2 className="">Forgot Password</h2>
+        <p class="main-container1">Please enter your e-mail address. You will receive an e-mail along with
               a link which can be used to reset your password</p>
-        <div className="title1">
+        <div class="title1">
           <label for="exampleInputEmail1">Email Address:</label><br/>
         </div>
-        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com"/>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com"/>
         <button type="submit" name="submit">Submit</button>
       </form>
 			</div>
