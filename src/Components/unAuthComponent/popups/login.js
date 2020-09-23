@@ -24,24 +24,24 @@ onCloseModal = () => {
     			<li><h2>PATIENT</h2></li>
     			<li><h2>DONOR</h2></li>
     		</ul>
-				<div class="google">
+				<div className="google">
     		<Glogin></Glogin>
 				</div>
-          		<div class="vl">
-            		<span class="vl-innertext">or</span>
+          		<div className="vl">
+            		<span className="vl-innertext">or</span>
           		</div>
-    		<div class="title1">
-    			<label class="labelemail" for="exampleInputEmail">Email Address</label><br/>
+    		<div className="title1">
+    			<label className="labelemail" for="exampleInputEmail">Email Address</label><br/>
     		</div>
-    		<input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="example@gmail.com" required/>
-    		<div class="title1">
-    			<label class="labelpassword" for="password">Password</label><br/>
+    		<input type="email" className="form-control"  aria-describedby="emailHelp" placeholder="example@gmail.com" required/>
+    		<div className="title1">
+    			<label className="labelpassword" for="password">Password</label><br/>
     		</div>
-    		<input type="password" class="form-control" placeholder="must be at-least 6 character" required/>
-    		<a class="forgot" name="forgot"  onClick={this.onOpenModal}>Forgot Password?</a>
+    		<input type="password" className="form-control" placeholder="must be at-least 6 character" required/>
+    		<a className="forgot" name="forgot"  onClick={this.onOpenModal}>Forgot Password?</a>
     		<button type="submit" name="submit">Submit</button>
-    		<div class="newtocure">
-    		New to CureStrings? Register <a class="new">(Patient/Donor)</a>
+    		<div className="newtocure">
+    		New to CureStrings? Register <a className="new">(Patient/Donor)</a>
     		</div>
     	</form>
 			<Modal open={openForgot} onClose={this.onCloseModal} center>
