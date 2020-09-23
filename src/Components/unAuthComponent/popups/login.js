@@ -25,29 +25,29 @@ asPatientorDonor = (val) => {
 		const { openForgot } = this.state;
 		return (
 			<div>
-      			<form class="popupform">
+      			<form className="popupform">
     			<ul>
-    				<li className="patient"><h2 onClick={()=>this.asPatientorDonor(1)} className={this.state.isPatient==1 ? "line":""}>PATIENT</h2></li>
-    				<li className="donor"><h2  onClick={()=>this.asPatientorDonor(2)} className={this.state.isPatient==2 ? "line":""}>DONOR</h2></li>
+    				<li classNameName="patient"><h2 onClick={()=>this.asPatientorDonor(1)} classNameName={this.state.isPatient==1 ? "line":""}>PATIENT</h2></li>
+    				<li classNameName="donor"><h2  onClick={()=>this.asPatientorDonor(2)} classNameName={this.state.isPatient==2 ? "line":""}>DONOR</h2></li>
     			</ul>
-				<div class="google">
+				<div className="google">
     		<Glogin/>
 				</div>
-          		<div class="vl">
-            		<span class="vl-innertext">or</span>
+          		<div className="vl">
+            		<span className="vl-innertext">or</span>
           		</div>
-    		<div class="title1">
-    			<label class="labelemail" for="exampleInputEmail">Email Address</label><br/>
+    		<div className="title1">
+    			<label className="labelemail" for="exampleInputEmail">Email Address</label><br/>
     		</div>
-    		<input type="email" class="inputEmail"  aria-describedby="emailHelp" placeholder="example@gmail.com" required/>
-    		<div class="title1">
-    			<label class="labelpassword" for="password">Password</label><br/>
+    		<input type="email" className="inputEmail"  aria-describedby="emailHelp" placeholder="example@gmail.com" required/>
+    		<div className="title1">
+    			<label className="labelpassword" for="password">Password</label><br/>
     		</div>
-    		<input type="password" class="inputPasswordPopups" placeholder="must be at-least 6 character" required/>
-    		<div class="forgot"><a name="forgot"  onClick={this.onOpenModal}>Forgot Password?</a></div>
-    		<button class="buttonSubmitPopups" type="submit" name="submit">Submit</button>
-    		<div class="newtocure">
-    		New to CureStrings? Register <a class="new">(Patient/Donor)</a>
+    		<input type="password" className="inputPasswordPopups" placeholder="must be at-least 6 character" required/>
+    		<div className="forgot"><a name="forgot"  onClick={this.onOpenModal}>Forgot Password?</a></div>
+    		<button className="buttonSubmitPopups" type="submit" name="submit">Submit</button>
+    		<div className="newtocure">
+    		New to CureStrings? Register <a className="new">(Patient/Donor)</a>
     		</div>
     	</form>
 			<Modal open={openForgot} onClose={this.onCloseModal} center>
