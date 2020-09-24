@@ -57,7 +57,16 @@ footer{
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
-	text-align: justify;
+	text-align: left;
+	position: relative;
+	display: block;
+}
+ul{
+	list-style: none;
+}
+
+li{
+	color: grey;
 }
 
 
@@ -66,16 +75,45 @@ footer{
 	width: 25%;
 }
 
+
+
+.copyright p{
+	margin-top: 500px;
+}
+
 .footer-right-span{
-	display: block;
 	color:  #FC4C02;
-	font-size: 70px;
+	font-size: 48px;
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 20px;
-	padding-left: 10%;
-	padding-right: 10%;
-	vertical-align: center;
+
+}
+
+.social-link{
+	width: 100%;
+	font-size: 48px;
+	text-align: center;
+}
+
+.social-link  .fa-facebook-square {
+  color: #3b5998;
+}
+
+.social-link .fa-instagram{
+	color: white;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+     /* -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; */
+}
+
+.social-link .fa-linkedin-square{
+	color: #0976b4;
+}
+
+.social-link .fa-twitter-square{
+	color: #55acee;
 }
 
 

@@ -97,7 +97,7 @@
 
  .column-button .donor-button{
 	float: left;
-	background-color: #000020; 
+	background-color: #000020;
   	border: none;
   	color: white;
   	padding: 15px 32px;
@@ -110,7 +110,7 @@
 
  .column-button .patient-button{
 	float: right;
-	background-color: #000020; 
+	background-color: #000020;
   	border: none;
   	color: white;
   	padding: 15px 32px;
@@ -213,6 +213,3 @@
   	font-size: 14px;
   }
 }
-
-
-

@@ -1,15 +1,36 @@
-form{
-	position:absolute;
+.patientform{
+	position: relative;
 	left:30%;
 	width:40%;
 	color:black;
 	box-shadow: 5px 5px 5px 5px #eeeeee;
-	padding-bottom:10px;
+	padding: 5% 3%;
 }
 .patienth1{
-	margin-left:20%;
-	color:#FC6100;
+	text-align: center;
+	padding-bottom: 8%;
+	color:tomato;
 }
+.switch{
+	font-size: 20px;
+	font-weight:bold;
+	color:white;
+	background:tomato;
+	border-radius: 4px;
+	border: 1px solid black;
+	width:50%;
+	height: 65px;
+	cursor: pointer;
+}
+.form-card{
+	margin-top: 5%;
+}
+
+.form-card:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 table{
   width:90%;
   margin-left:5%;
@@ -32,72 +53,52 @@ label{
 	font-family: sans-serif;
 	font-size: 20px;
 }
-input
+.inputs
 {
 	margin-left:5%;
 	border-radius: 7px;
-	border: 2px solid #FC6100;
+	border: 2px solid tomato;
 	width:90%;
 	height: 50px;
 	text-align:left;
+	padding: 0 3%;
 }
 .tableinputs
 {
 	margin-left:5%;
 	border-radius: 7px;
-	border: 2px solid #FC6100;
-	width:96%;
+	border: 2px solid tomato;
+	width:80%;
 	height: 50px;
 	text-align:left;
+	padding: 0 3%;
 }
 
 .bglabel{
 	margin-top:8%;
 }
-.bginput{
-	width:60%;
-	margin-left:9%;
-	margin-top:5%;
-}
+
 
 .aglabel{
 	margin-top:8%;
 }
-.aginput{
-	width:60%;
-	margin-left:23%;
-	margin-top:5%;
-}
+
 .clabel{
 	margin-top:8%;
-}
-.cinput{
-	width:60%;
-	margin-left:23%;
-	margin-top:5%;
 }
 .pclabel{
 	margin-top:8%;
 }
-.pcinput{
-	width:60%;
-	margin-left:16%;
-	margin-top:5%;
-}
+
 .gnlabel{
 	margin-top:8%;
-}
-.gninput{
-	width:60%;
-	margin-left:17%;
-	margin-top:5%;
 }
 
 input[type="radio"]
 {
 	width:30px;
 	border-radius: 1px;
-	border: 2px solid #FC6100;
+	border: 2px solid tomato;
 }
 .patientnop{
 	position:absolute;
@@ -116,31 +117,41 @@ input[type="radio"]
 input[type="checkbox"]{
 	width:20px;
 }
-button
+.patientbutton
 {
 	font-size: 20px;
 	font-weight:bold;
 	color:white;
-	margin-left:5%;
-	background:#FC6100;
+	margin:5% 5%;
+	background:tomato;
 	border-radius: 4px;
 	border: 1px solid black;
 	width:90%;
-	height: 50px;
+	height: 65px;
+	cursor: pointer;
 }
 .patienttc{
-	margin-top:33%;
-	margin-left:11%;
+	margin-top:33.5%;
+	margin-left:10%;
 }
 
 
 .patientcb{
-	margin-top:30%;
+	margin-top:33%;
 	margin-left:-95%;
 }
+.std{
+	color:#FC6100;
+	font-weight: bold;
+}
+.notaPatient{
+	margin-left:30%;
+	font-weight: bold;
+
+}
 @media only screen and (max-width: 600px) {
-form{
-	position:absolute;
+.patientform{
+	position:relative;
 	left:10%;
 	width:80%;
 	color:black;
@@ -148,44 +159,19 @@ form{
 	padding-bottom:10px;
 }
 .patienth1{
-	margin-left:1%;
-	color:#FC6100;
+	color:tomato;
 }
-.bginput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.aginput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.gninput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.cinput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
-.pcinput{
-	width:90%;
-	margin-left:5%;
-	margin-top:0%;
-}
+
 .reportdate{
 	margin-top:20%;
 }
 .patientnop{
-	position:absolute;
+	position:relative;
 	left:80%;
 	margin-top:20%;
 }
 .patientyesp{
-	position:absolute;
+	position:relative;
 	left:10%;
 	margin-top:20%;
 }
@@ -195,11 +181,26 @@ form{
 }
 
 .patientcb{
-	margin-top:45%;
-	margin-left:-95%;
+	margin-top:32%;
+	margin-left:5%;
 }
 .patienttc{
 	margin-top:50%;
 	margin-left:12%;
+}
+.patientnop{
+	position: absolute;
+	margin-top: 20%;
+
+}
+.patientyesp{
+	position: absolute;
+	margin-top:20%;
+	margin-left:0%;
+	float:none;
+}
+.notaPatient{
+	margin-left:22%;
+	font-weight: bold;
 }
 }
